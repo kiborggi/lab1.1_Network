@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="id" maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+
+      <Button fx:id="btn" layoutX="560.0" layoutY="34.0" mnemonicParsing="false" onAction="#clickPing" prefHeight="25.0" prefWidth="85.0" text="ping" />
+      <TextArea fx:id="PingField" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="200.0" promptText="Ip" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="27.0" />
+      <CheckBox fx:id="pingT" layoutX="264.0" layoutY="38.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="58.0" text="-t" />
+      <TextArea fx:id="txt" layoutY="280.0" prefHeight="264.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Blend />
+         </effect></TextArea>
+               
+
+      <Button fx:id="stop" layoutX="611.0" layoutY="360.0" mnemonicParsing="false" onAction="#stop" prefHeight="51.0" prefWidth="58.0">
+
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@927.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="ipConfig" layoutX="560.0" layoutY="101.0" mnemonicParsing="false" onAction="#clickIpconfig" prefHeight="25.0" prefWidth="85.0" text="ipconfig" />
+      <Button fx:id="tracert" layoutX="560.0" layoutY="171.0" mnemonicParsing="false" onAction="#clickTracert" prefHeight="25.0" prefWidth="85.0" text="tracert " />
+      <Button fx:id="getmac" layoutX="560.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickGetmac" prefHeight="25.0" prefWidth="85.0" text="getmac" />
+      <Button fx:id="arp" layoutX="560.0" layoutY="299.0" mnemonicParsing="false" onAction="#clickArp" prefHeight="25.0" prefWidth="85.0" text="arp" />
+      <TextArea fx:id="ipConfinArg" layoutX="14.0" layoutY="102.0" prefHeight="38.0" prefWidth="200.0" promptText="адаптер" />
+      <TextArea fx:id="tracerNumber" layoutX="468.0" layoutY="165.0" prefHeight="38.0" prefWidth="85.0" promptText="число переходов" />
+      <CheckBox fx:id="pingA" layoutX="300.0" layoutY="38.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="30.0" text="-a" />
+      <CheckBox fx:id="pingF" layoutX="338.0" layoutY="38.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="30.0" text="-f" />
+      <CheckBox fx:id="ipconfigAll" layoutX="264.0" layoutY="113.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="42.0" text="-all" />
+      <CheckBox fx:id="ipconfigRenew" layoutX="314.0" layoutY="113.0" mnemonicParsing="false" text="-renew " />
+      <CheckBox fx:id="ipconfigRelese" layoutX="385.0" layoutY="113.0" mnemonicParsing="false" text="-release " />
+      <TextArea fx:id="tracertArg" layoutX="14.0" layoutY="165.0" prefHeight="38.0" prefWidth="200.0" promptText="ip" />
+      <CheckBox fx:id="tracertD" layoutX="264.0" layoutY="175.0" mnemonicParsing="false" text="-d" />
+      <CheckBox fx:id="tracertH" layoutX="314.0" layoutY="175.0" mnemonicParsing="false" text="-h" />
+      <CheckBox fx:id="tracert4" layoutX="368.0" layoutY="175.0" mnemonicParsing="false" text="-4" />
+      <CheckBox fx:id="tracert6" layoutX="419.0" layoutY="175.0" mnemonicParsing="false" text="-6" />
+      <TextArea fx:id="user" layoutX="27.0" layoutY="230.0" prefHeight="38.0" prefWidth="161.0" promptText="user" />
+      <PasswordField fx:id="getmacPss" layoutX="219.0" layoutY="230.0" prefHeight="37.0" prefWidth="149.0" promptText="pass" />
+      <CheckBox fx:id="getmacS" layoutX="382.0" layoutY="234.0" mnemonicParsing="false" text="-s" />
+      <TextArea fx:id="getmacip" layoutX="419.0" layoutY="230.0" prefHeight="38.0" prefWidth="119.0" promptText="ip" />
+      <TextArea fx:id="arpIp" layoutY="293.0" prefHeight="25.0" prefWidth="200.0" promptText="ip адресс" />
+      <TextArea fx:id="arpMac" layoutX="222.0" layoutY="293.0" prefHeight="0.0" prefWidth="200.0" promptText="физический адресс" />
+      <CheckBox fx:id="arpA" layoutX="432.0" layoutY="291.0" mnemonicParsing="false" text="-a" />
+      <CheckBox fx:id="arpS" layoutX="432.0" layoutY="316.0" mnemonicParsing="false" text="-s" />
+   </children>
+</AnchorPane>
